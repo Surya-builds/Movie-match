@@ -87,7 +87,7 @@ similarity = np.load("similarity.npz")["similarity"]
 movie_list = movies["title"].values
 
 # Header
-st.markdown("<h1>🎬 MovieMatch</h1>", unsafe_allow_html=True)
+st.markdown("<h1> MovieMatch</h1>", unsafe_allow_html=True)
 st.markdown(
     "<p style='text-align:center;color:gray;'>Find movies similar to your favorites instantly</p>",
     unsafe_allow_html=True
@@ -109,7 +109,7 @@ if st.button("✨ Show Recommendations"):
     for i in range(3):
         with row1[i]:
             st.image(posters[i], use_container_width=True)
-            st.markdown(f"### 🎥 {names[i]}")
+            st.markdown(f"###  {names[i]}")
 
     st.markdown("<br>", unsafe_allow_html=True)
 
